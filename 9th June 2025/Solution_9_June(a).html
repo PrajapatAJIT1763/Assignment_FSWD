@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .profile-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    margin-left: 35%;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+
+  .profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin: 0 0 12px;
+    color: #333;
+  }
+
+  .profile-bio {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .follow-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    background-color: #4b6cb7;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .follow-btn:hover {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  }
+    </style>
+</head>
+<body>
+    <!-- Profile - Card -->
+    <div class="profile-card">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Profile Image" class="profile-img">
+        <h2 class="profile-name">Neuvillette</h2>
+        <p class="profile-bio">Frontend developer who loves clean design, minimalism, and subtle animations.</p>
+        <button class="follow-btn">Follow</button>
+    </div>
+
+</body>
+</html>

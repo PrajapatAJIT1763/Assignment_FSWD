@@ -1,0 +1,54 @@
+.box1{
+    Width: 300px;
+   Height: 150px;
+   Background-color: lightblue;
+   Border: 2px solid navy;
+   text-align: center;
+}
+.para{
+    color: darkblue;
+    Font-size: 16px;
+    text-align: center;
+    margin: 50%;
+}
+.btn1{
+    Width: 100px;
+    Height: 40px;
+    Border: none;
+    background-color: red;
+}
+.btn2{
+    Width: 100px;
+    Height: 40px;
+    Border: none;
+    background-color: green;
+}
+.btn3{
+    Width: 100px;
+    Height: 40px;
+    Border: none;
+    background-color: yellow;
+}
+.circle{
+    Width: 100px;
+    Height: 100px;
+    Border-radius: 50%;
+    Background-color: orange;
+    Border: 2px dashed brown;
+    text-align: center;
+}
+h2{
+    margin-top: 35%;
+    color: #16047c;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: #953DF5; /* (e.g., from blue to purple) */
+    Border: 1px solid gray;
+    text-align: center;
+}
+.card_h2{
+    margin-top: 50%;
+    color: orange;
+}

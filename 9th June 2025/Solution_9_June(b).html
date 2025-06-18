@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: sans-serif;
+  background: #fff;
+  padding: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Box Shadow Styles */
+.shadow60 {
+  box-shadow:
+    -10px -10px 0 0 red,
+    -20px -20px 0 0 orange,
+    -30px -30px 0 0 yellow,
+    -40px -40px 0 0 green,
+    -50px -50px 0 0 blue;
+}
+
+.shadow61 {
+  box-shadow:
+    0 0 0 2px red,
+    0 0 0 4px orange,
+    0 0 0 6px yellow,
+    0 0 0 8px green,
+    0 0 0 10px blue;
+}
+
+.shadow62 {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.shadow63 {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shadow64 {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.shadow65 {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shadow66 {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+}
+
+.shadow67 {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+span {
+  font-size: 12px;
+  color: gray;
+  margin-top: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box shadow60">#60<br><span>by Fossheim</span></div>
+        <div class="box shadow61">#61<br><span>by Fossheim</span></div>
+        <div class="box shadow62">#62<br><span>by boxshadows.com</span></div>
+        <div class="box shadow63">#63<br><span>by boxshadows.com</span></div>
+        <div class="box shadow64">#64<br><span>by box-shadows.co</span></div>
+        <div class="box shadow65">#65<br><span>by box-shadows.co</span></div>
+        <div class="box shadow66">#66<br><span>by box-shadows.co</span></div>
+        <div class="box shadow67">#67<br><span>by box-shadows.co</span></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 40px 0;
+  background-color: #b2fefe;
+  font-family: Arial, sans-serif;
+}
+
+/* Common Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #075b5b;
+  padding: 15px 30px;
+  margin-bottom: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: white;
+  color: #075b5b;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Layout Specific Adjustments */
+.layout1 .logo {
+  order: 0;
+}
+
+.layout2 {
+  justify-content: space-between;
+}
+
+.layout2 .menu {
+  order: 0;
+}
+
+.layout2 .logo {
+  order: 1;
+}
+
+.layout3 {
+  justify-content: space-between;
+}
+
+.layout3 .menu {
+  order: 0;
+}
+
+.layout3 .logo {
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    </style>
+</head>
+<body>
+  <!-- NAVBAR 1 -->
+  <nav class="navbar layout1">
+    <div class="logo">B W C</div>
+    <ul class="menu">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SERVICES</li>
+    </ul>
+    <button class="contact-btn">CONTACT</button>
+  </nav>
+
+  <!-- NAVBAR 2 -->
+  <nav class="navbar layout2">
+    <ul class="menu">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SERVICES</li>
+      <li><button class="contact-btn">CONTACT</button></li>
+    </ul>
+    <div class="logo">B W C</div>
+  </nav>
+
+  <!-- NAVBAR 3 -->
+  <nav class="navbar layout3">
+    <ul class="menu">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>SERVICES</li>
+    </ul>
+    <!-- <div class="logo">B W C</div> -->
+    <div style="  font-size: 22px; font-weight: bold; color: white; letter-spacing: 2px;">B W C</div>
+    <button class="contact-btn">CONTACT</button>
+  </nav>
+
+</body>
+</html>

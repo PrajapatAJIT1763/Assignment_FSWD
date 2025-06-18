@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Practice Assignment</title>
+</head>
+<body>
+
+  <!-- DOM Display Sections -->
+  <div id="dateTime"></div>
+  <div id="year"></div>
+  <div id="daysLeft"></div>
+
+  <p id="helloText"></p>
+  <div id="htmlText"></div>
+  <div id="listContainer"></div>
+  <div id="welcome"></div>
+
+  <script>
+    // MATH QUESTIONS
+
+    // 1. Random number between 1 and 100
+    function getRandom() {
+      return Math.floor(Math.random() * 100) + 1;
+    }
+    console.log("Random (1-100):", getRandom());
+
+    // 2. Square root
+    function getSqrt(num) {
+      return Math.sqrt(num);
+    }
+    console.log("Square root of 49:", getSqrt(49));
+
+    // 3. Round down, up, nearest
+    let num = 4.7;
+    console.log(`Floor: ${Math.floor(num)}, Ceil: ${Math.ceil(num)}, Round: ${Math.round(num)}`);
+
+    // DATE QUESTIONS
+
+    const now = new Date();
+
+    // 1. Show current date & time
+    document.getElementById("dateTime").innerText = `Current Date & Time: ${now}`;
+
+    // 2. Show only year
+    document.getElementById("year").innerText = `Current Year: ${now.getFullYear()}`;
+
+    // 3. Days left in the year imp**
+    function getDaysLeftInYear() {
+      const endOfYear = new Date(now.getFullYear(), 11, 31);
+      const oneDay = 1000 * 60 * 60 * 24;
+      const diffTime = endOfYear - now;
+      return Math.ceil(diffTime / oneDay);
+    }
+    document.getElementById("daysLeft").innerText = `Days left in year: ${getDaysLeftInYear()}`;
+
+    // TIMERS
+
+    // 1. Countdown timer (5 to 1)
+    let count = 5;
+    const intervalId = setInterval(() => {
+      if (count > 0) {
+        console.log(count);
+        count--;
+      } else {
+        console.log("Time’s up!");
+        clearInterval(intervalId);
+      }
+    }, 1000);
+
+    // 2. Delayed welcome message
+    setTimeout(() => {
+      document.getElementById("welcome").innerText = "Welcome!";
+    }, 2000);
+
+    // DOM PRACTICAL
+
+    window.onload = function () {
+      // 1. Hello World using innerText
+      document.getElementById("helloText").innerText = "Hello World";
+
+      // 2. Insert bold text using innerHTML
+      document.getElementById("htmlText").innerHTML = "<b>JavaScript is Fun</b>";
+
+      // 3. List from Array
+      const skills = ["HTML", "CSS", "JS"];
+      let listHTML = "<ul>";
+      skills.forEach(skill => {
+        listHTML += `<li>${skill}</li>`;
+      });
+      listHTML += "</ul>";
+      document.getElementById("listContainer").innerHTML = listHTML;
+    };
+  </script>
+
+</body>
+</html>

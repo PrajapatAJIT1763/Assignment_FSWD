@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  color: #333;
+  margin: 15px 0 25px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+/* Specific styles */
+.twitter i {
+  color: #000;
+}
+
+.twitter .btn {
+  background-color: #000;
+}
+
+.instagram {
+  background-color: #e4405f;
+  color: #fff;
+  border: none;
+}
+
+.instagram i,
+.instagram h2,
+.instagram p {
+  color: #fff;
+}
+
+.instagram .btn {
+  background-color: #fff;
+  color: #e4405f;
+}
+
+.youtube i {
+  color: #000;
+}
+
+.youtube .btn {
+  background-color: #000;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+    <!-- Twitter -->
+    <div class="card twitter">
+      <i class="fab fa-twitter"></i>
+      <h2>TWITTER</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <a href="#" class="btn">READ MORE</a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="card instagram">
+      <i class="fab fa-instagram"></i>
+      <h2>INSTAGRAM</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <a href="#" class="btn">READ MORE</a>
+    </div>
+
+    <!-- YouTube -->
+    <div class="card youtube">
+      <i class="fab fa-youtube"></i>
+      <h2>YOUTUBE</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <a href="#" class="btn">READ MORE</a>
+    </div>
+  </div>
+</body>
+</html>
