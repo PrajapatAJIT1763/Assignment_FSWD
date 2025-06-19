@@ -5,35 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
       <style>
+    .outer1{
+        width: 1100px;
+        height: 300px;
+    }
     .outer {
-      width: 1000px;
-      height: 200px;
+      width: 1100px;
+      height: 100px;
       display: flex;
       border: 2px double black;
     }
 
     .left {
       width: 20%;
-      height: 50%;
+      height: 100%;
       /* background-color: lightblue; */
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px double black;
+      border: 1px solid black;
       /* font-weight: bold; */
     }
 
     .right {
       width: 78.9%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-right,
+    .bottom-right {
       height: 50%;
+      width: 100%;
+      display: flex;
+      padding-left: 10px;
+      align-items: center;
+    }
+
+    .top-right {
+      /* background-color: lightcoral; */
+      border: 1px solid black;
+    }
+
+    .bottom-right {
+      /* background-color: lightgreen; */
+      border: 1px solid black;
+      font-size: small;
+    }
+
+       .outerA {
+      width: 1100px;
+      height: 200px;
+      display: flex;
+      border: 2px solid black;
+      margin-top: -3px;
+    }
+
+    .left1 {
+      width: 20%;
+      height: 200px;
+      /* background-color: lightblue; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      /* font-weight: bold; */
+    }
+
+    .right1 {
+      width: 78.9%;
+      height: 200px;
       display: flex;
       flex-direction: column;
       /* padding-left: 10px; */
       /* border: 1px solid black; */
     }
 
-    .top-right,
-    .bottom-right {
+    .top-right1,
+    .bottom-right1 {
       height: 50%;
       width: 100%;
       display: flex;
@@ -43,12 +93,12 @@
       align-items: center;
     }
 
-    .top-right {
+    .top-right1 {
       /* background-color: lightcoral; */
-      border: 1px double black;
+      border: 1px solid black;
     }
 
-    .bottom-right {
+    .bottom-right1 {
       /* background-color: lightgreen; */
       border: 1px double black;
       font-size: small;
@@ -311,27 +361,29 @@
             <h2>&#127856 Dolci (Desserts)</h2>
             <h3>Traditional Italian Sweets</h3>
 
-            <!-- <div class="outer1">     -->
+            <div class="outer1" style="width: 1100px;height: 300px;">    
                 <div class="outer">
                     <div class="left">
-                    <img src=" " alt="Classic Tiramisu">
-                </div>
-                <div class="right">
-                    <div class="top-right"><b>Tiramisu </b>- &dollar;9</div>
-                    <div class="bottom-right">Classic Italian dessert with coffee-soaked ladyfingers, mascarpone, and cocoa. Made fresh daily by our pastry chef using the original family recipe from Treviso.</div>
-                </div>
+                        <img src=" " alt="Classic Tiramisu">
+                    </div>
+                    <div class="right">
+                        <div class="top-right"><b>Tiramisu </b>- &dollar;9</div>
+                        <div class="bottom-right">Classic Italian dessert with coffee-soaked ladyfingers, mascarpone, and cocoa. Made fresh daily by our pastry chef using the original family recipe from Treviso.</div>
+                    </div>
                 </div>
 
-                <div>
-                    <img src=" " alt="Classic Tiramisu">
+                <div class="outerA">
+                    <div class="left1">
+                    <img style="height: 200px;width: 100%;" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa3rXMzDT4fEziC3AZtSdID6krfv5Wo-Fuww&s" alt="Cannoli Siciliani">
                 </div>
-                <div >
-                    <div><b>Tiramisu </b>- &dollar;9</div>
-                    <div>Classic Italian dessert with coffee-soaked ladyfingers, mascarpone, and cocoa. Made fresh daily by our pastry chef using the original family recipe from Treviso.</div>
+                <div class="right1">
+                    <div class="top-right1"><b>Cannoli Siciliani </b>- &dollar;8</div>
+                    <div class="bottom-right1">Crispy pastry shells filled with sweet ricotta, chocolate chips, and pistachios. Shells are made to order for maximum crispiness!</div>
                 </div>
-            <!-- </div> -->
-
-            <hr style="margin-right: 50px;">
+                </div>
+            </div>
+            <br>
+            <hr style="margin-right: 50px; margin-top: 10px;">
             <h2>&#127863 Beverages</h2>
             <h3>Wine Selection</h3>
             <h4>Red Wines</h4>
@@ -392,6 +444,112 @@
                 <br>Website: <span style="text-decoration: underline;color: blue;">www.bellavista.com</span></p>
             </div>
             <hr style="margin-right: 50px;">
+            <h3>&#128221 Make a Reservation</h3>
+            <p><b>Reserve your table today! </b><span style="font-style: italic; font-size: medium;">(All fields required)</span></p>
+            
+            <form>
+                <fieldset style="border: 1px solid; margin-right: 50px; height: 190px;">
+                    <legend>Personal Information</legend>
+                    <label for="text">Full Name:<br></label>
+                    <input type="text" style="margin-top: 2px;">
+                    <br>
+                    <br>
+                    <label for="email">Email:<br></label>
+                    <input type="email" style="margin-top: 2px;">
+                    <br>
+                    <br>
+                    <label for="number">Phone Number:<br></label>
+                    <input type="number" style="margin-top: 2px;">
+                </fieldset>
+            </form>
+            <form>
+                <fieldset style="border: 1px solid; margin-right: 50px; height: 620px;">
+                    <legend>Reservation Details</legend>
+                    <label for="date">Preferred Date:<br></label>
+                    <input type="date" style="margin-top: 2px;">
+                    <br>
+                    <br>
+                    <label for="time">Preffered Time:<br></label>
+                    <input type="time" style="margin-top: 2px;">
+                    <br>
+                    <br>
+                    <label for="number">Number of Guests:<br></label>
+                    <input type="" style="margin-top: 2px;">
+                    <br>
+                    <br>
+                    <label for="guests">Number of Guests:<br></label>
+                    <select id="guests" name="guests" style="margin-top: 2px;">
+                        <option value="">Select number of guests...</option>
+                        <option value="bca">1</option>
+                        <option value="btech">2</option>
+                        <option value="bcom">3</option>
+                        <option value="ba">4</option>
+                        <option value="msc">5</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="">Special Occasion:</label><br>
+                    <label>
+                        <input type="radio" name="occasion" value="No special occasion">
+                        No special occasion
+                    </label><br>
+                    <label>
+                        <input type="radio" name="occasion" value="birthday">
+                        Birthday
+                    </label><br>
+                    <label>
+                        <input type="radio" name="occasion" value="anniversary">
+                        Anniversary
+                    </label><br>
+                    <label>
+                        <input type="radio" name="occasion" value="Business Dinner">
+                        Business Dinner
+                    </label><br>
+                    <label>
+                        <input type="radio" name="occasion" value="Other">
+                        Other
+                    </label><br>
+                    <br>
+                    <label for="">Dietary Preferences/Allergies:</label><br>
+                    <label>
+                        <input type="checkbox" name="occasion" value="Vegetarian">
+                        Vegetarian
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="occasion" value="Vegan">
+                        Vegan
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="occasion" value="Gluten-Free">
+                        Gluten-Free
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="occasion" value="Dairy-Free">
+                        Dairy-Free
+                    </label><br>
+                    <br>
+                    <label for="">Special Request/Comments:<br></label>
+                    <textarea id="message" name="message" rows="5" cols="45" style="margin-top: 2px;" placeholder="Please let us know about any allergies, special seating requests, or other needs..."></textarea><br><br>
+                </fieldset>
+            </form>
+            <label>
+                <input type="checkbox" value="Subscribe" style="margin-top: 3px;">
+                Subscribe to our newsletter for special offers
+            </label><br>
+            <div style="margin-top: 15px;">
+                <input type="submit" value="Make Reservation">
+                <input type="reset" value="Clear Form">
+            </div>
+            <hr style="margin-right: 50px;">
+            <h3><b>Follow Us</b></h3>
+            <p><span style="color: blue;text-decoration: underline;">&#128216; Facebook</span> | 
+                <span style="color: blue;text-decoration: underline;">&#x1F4F7; Instagram</span> | 
+                <span style="color: blue;text-decoration: underline;">&#x1F426; Twitter</span></p>
+            <p style="font-size: small;">&copy; 2024 Bella Vista Restaurant. All rights reserved. |
+                 <span style="color: blue;text-decoration: underline;">Privacy Policy.</span> |
+                  <span style="color: blue;text-decoration: underline;">Terms of Service</span></p>
+            <p style="font-size: 15px;"><span style="font-family:monospace;">Ctrl+D</span> to bookmark this page!</p>
+            <p><b>Buon Appetito! <span style="font-family: monospace; font-weight:900;">IT</span></b></p>
         </div>
     </div>
 </body>
