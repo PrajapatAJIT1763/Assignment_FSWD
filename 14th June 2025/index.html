@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -16,10 +18,10 @@
             </i>  010-020-0340</p>
         </div>
         <div style="margin-right: 50px; display: flex; justify-content: space-between; gap: 30px;">
-            <i class="fa-brands fa-facebook fa-xs" style="color: whitesmoke;"></i>
-            <i class="fa-brands fa-instagram fa-xs" style="color: whitesmoke;"></i>
-            <i class="fa-brands fa-twitter fa-xs" style="color: whitesmoke;"></i>
-            <i class="fa-brands fa-linkedin fa-xs" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-facebook fa-sm" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-instagram fa-sm" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-twitter fa-sm" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-linkedin fa-sm" style="color: whitesmoke;"></i>
         </div>
     </div>
     <div class="navbar">
@@ -47,38 +49,233 @@
         </div>
     </div>
 
-    <div class="slider-container">
-        <div class="slide">
-            <div class="content">
-                <h2>Slide 1 Title</h2>
-                <p>This is the content for the first slide. It's aligned to the left side.</p>
+
+    <div class="slider-wrapper">
+
+        <button class="slide-btn left">
+            <i class="fa-solid fa-chevron-left fa-2xl" style="color: #7fb899;"></i>
+        </button> <!-- double left arrow -->
+        <div class="slider-container">
+            <div class="slide">
+                <div class="content">
+                    <p style="font-size: 64px;"
+                    >Proident occaecat</p>
+                    <p style="font-size: xx-large; font-weight: absolute; margin-top: -10px;">Aliquip ex ea commodo consequat</p>
+                    <p style="font-size: 20px;">You are permitted to use this Zay CSS template for your<br>
+                    commercial websites. You are <span style="font-weight: bolder;">not permitted</span> to re-distribute<br>
+                    the template ZIP file in any kind of template collection<br>websites.</p>
+                </div>
+                <div class="image">
+                    <img src="banner_img_01.jpg" alt="Slide 1 Image">
+                </div>
             </div>
-            <div class="image">
-                <img src="banner_img_01.jpg" alt="Slide 1 Image">
+
+            <div class="slide">
+                <div class="content">
+                    <p style="font-size: 64px;"
+                    >Proident occaecat</p>
+                    <p style="font-size: xx-large; font-weight: absolute;">Aliquip ex ea commodo consequat</p>
+                    <p style="font-size: 20px;">You are permitted to use this Zay CSS template for your<br>
+                    commercial websites. You are <span style="font-weight: bolder;">not permitted</span> to re-distribute<br>
+                    the template ZIP file in any kind of template collection<br>websites.</p>
+                </div>
+                <div class="image">
+                    <img src="banner_img_02.jpg" alt="Slide 2 Image">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <p style="font-size: 64px;"
+                    >Proident occaecat</p>
+                    <p style="font-size: xx-large; font-weight: absolute;">Aliquip ex ea commodo consequat</p>
+                    <p style="font-size: 20px;">You are permitted to use this Zay CSS template for your<br>
+                    commercial websites. You are <span style="font-weight: bolder;">not permitted</span> to re-distribute<br>
+                    the template ZIP file in any kind of template collection<br>websites.</p>
+                </div>
+                <div class="image">
+                    <img src="banner_img_03.jpg" alt="Slide 3 Image">
+                </div>
             </div>
         </div>
+        <button class="slide-btn right">
+            <i class="fa-solid fa-chevron-right fa-2xl" style="color: #7fb899;"></i>
+        </button>
 
-        <div class="slide">
-            <div class="content">
-                <!-- <h2 style="font-size: 24px;">Proident occaecat</h2> -->
-                 <p style="font-size: 32px;">Proident occaecat</p>
-                <p>This is the content for the second slide. Also aligned to the left.</p>
-            </div>
-            <div class="image">
-                <img src="banner_img_02.jpg" alt="Slide 2 Image">
-            </div>
+    </div>
+    
+    <div class="outer">
+        <div class="top-content">
+            <p style="font-size: 52px;">Categories of The Month</p>
+            <p style="font-size: 20px; margin-top: -30px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui<br>
+            <span>officia deserunt mollit anim id est laborum.</span></p>
         </div>
 
-        <div class="slide">
-            <div class="content">
-                <h1>sdfg</h>
-                <p>This is the third slide with text on the left and image on the right.</p>
+        <div class="bottom-images">
+            <div class="img-box">
+                <img src="category_img_01.jpg" alt="Image 1">
+                <h2>Watches</h2>
+                <button style="width: 100px; height: 45px; background-color: rgb(89, 153, 89); font-size: 16px; border-radius: 5px;color: whitesmoke;border: 1px none;">Go Shop</button>
             </div>
-            <div class="image">
-                <img src="banner_img_03.jpg" alt="Slide 3 Image">
+            <div class="img-box">
+                <img src="category_img_02.jpg" alt="Image 2">
+                <h2>Shoes</h2>
+                <button style="width: 100px; height: 45px; background-color: rgb(89, 153, 89); font-size: 16px; border-radius: 5px;color: whitesmoke;border: 1px none;">Go Shop</button>
+            </div>
+            <div class="img-box">
+                <img src="category_img_03.jpg" alt="Image 3">
+                <h2>Accessories</h2>
+                <button style="width: 100px; height: 45px; background-color: rgb(89, 153, 89); font-size: 16px; border-radius: 5px;color: whitesmoke;border: 1px none;">Go Shop</button>
             </div>
         </div>
     </div>
+
+    
+    <div class="outer1">
+  <!-- Top Section (30% height) -->
+  <div class="top-content1">
+    <p style="font-size: 52px;">Featured Product</p>
+    <p style="font-size: 20px; margin-top: -30px;">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla<br>
+    <span>pariatur. Excepteur sint occaecat cupidatat non proident.</span></p>
+  </div>
+
+  <!-- Bottom Section (70% height) -->
+  <div class="bottom-cards">
+    <!-- Card 1 -->
+    <div class="card1">
+      <div class="card-img">
+        <img src="feature_prod_01.jpg" alt="Image 1">
+      </div>
+      <div class="card-text">
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B; margin-left: 0px;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: gray;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: gray;"></i>
+        <span style="font-size: 20px; margin-left: 110px;">&dollar;240.00</span>
+        <h1 style="font-weight: lighter;">Gym Weight</h1>
+        <p style="font-size: 20px; font-weight: 100;">Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit. Sunt in<br>
+        culpa qui officia desserunt.</p>
+        <p style="font-size: 21px; font-weight: lighter; margin-top: 20px;">Reviews(24)</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card1">
+      <div class="card-img">
+        <img src="feature_prod_02.jpg" alt="Image 2">
+      </div>
+      <div class="card-text">
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: gray;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: gray;"></i>
+        <span style="font-size: 20px; margin-left: 110px;">&dollar;480.00</span>
+        <h1 style="font-weight: lighter;">Cloud Nike Shoes</h1>
+        <p style="font-size: 20px; font-weight: 100;">Aenean gravida dignissim finibus.<br>
+        Nullam ipsum diam, posuere vitae<br>
+        pharetra sed, commodo ullamcorper.</p>
+        <p style="font-size: 21px; font-weight: lighter; margin-top: 20px;">Reviews(48)</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card1">
+      <div class="card-img">
+        <img src="feature_prod_03.jpg" alt="Image 3">
+      </div>
+      <div class="card-text">
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+        <span style="font-size: 20px; margin-left: 110px;font-weight: lighter;">&dollar;360.00</span>
+        <h1 style="font-weight: 100;">Summer Addides Shoes</h1>
+        <p style="font-size: 20px; font-weight: 100;">Curabitur ac mi sit amet diam luctus<br>
+        porta. Phasellus pulvinar sagittis diam,<br>
+        et scelerisque ipsum lobortis nec.</p>
+        <p style="font-size: 21px; font-weight: lighter; margin-top: 20px;">Reviews(74)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-container">
+  <!-- Top Section (75%) -->
+  <div class="top-section">
+    <div class="card2" style="margin-top: -7px;">
+      <p style="font-size: 34px;color: rgb(89, 196, 89);">Zay Shop</p>
+      <div class="blur-line"></div>
+      <p style="font-size: 18px;"><i style="margin-right: 5px;" class="fa-solid fa-location-dot fa-lg"></i>   123 Consectetur at ligula 10660</p>
+      <p style="font-size: 18px;"><i style="margin-right: 5px;" class="fa-solid fa-phone-flip fa-lg"></i>  010-020-0340</p>
+      <p style="font-size: 18px;"><i style="margin-right: 5px;" class="fa-solid fa-envelope fa-lg"></i>   info@company.com</p>
+    </div>
+    <div class="card2">
+      <p style="font-size: 32px;">Products</p>
+      <div class="blur-line"></div>
+      <p style="font-size: 18px;">Luxury</p>
+      <p style="font-size: 18px;">Sport Wear</p>
+      <p style="font-size: 18px;">Men's Shoes</p>
+      <p style="font-size: 18px;">Women's Shoes</p>
+      <p style="font-size: 18px;">Popular Dress</p>
+      <p style="font-size: 18px;">Gym Accessories</p>
+      <p style="font-size: 18px;">Sport Shoes</p>
+    </div>
+    <div class="card2">
+      <p style="font-size: 32px;">Further Info</p>
+      <div class="blur-line"></div>
+      <p style="font-size: 18px;">Home</p>
+      <p style="font-size: 18px;">About Us</p>
+      <p style="font-size: 18px;">Shop Locations</p>
+      <p style="font-size: 18px;">FAQs</p>
+      <p style="font-size: 18px;">Contact</p>
+    </div>
+  </div>
+
+  <!-- Blur Line Between Sections -->
+  <div class="section-separator"></div>
+
+  <!-- Bottom Section (25%) -->
+  <div class="bottom-section">
+    <div class="left-content">
+      <div style="margin-right: 50px; display: flex; gap: 30px;">
+            <i class="fa-brands fa-facebook fa-xl" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-instagram fa-xl" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-twitter fa-xl" style="color: whitesmoke;"></i>
+            <i class="fa-brands fa-linkedin fa-xl" style="color: whitesmoke;"></i>
+        </div>
+    </div>
+    <div class="right-content">
+      <input type="email" placeholder="Email address" style="background-color: black;
+       border: 1px none; font-size: 18px;border-radius: 5px 0px 0px 5px;">
+      <button style="color:whitesmoke;background-color: rgb(89, 196, 89);
+       border: 1px none; font-size: 18px; border-radius: 0px 5px 5px 0px;">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: rgba(0,0,0,0.95); margin-top: -18px;
+color: whitesmoke; height: 80px; font-size: 18px;">
+  <p style="padding-top: 25px;margin-left: 50px;">Copyright &copy; 2021 Company Name | Designed by <u>TemplateMo</u></p>
+</footer>
+
+
+    <script>
+        const slider = document.querySelector('.slider-container');
+        const leftBtn = document.querySelector('.slide-btn.left');
+        const rightBtn = document.querySelector('.slide-btn.right');
+
+        leftBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        rightBtn.addEventListener('click', () => {
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    </script>
 
 </body>
 </html>

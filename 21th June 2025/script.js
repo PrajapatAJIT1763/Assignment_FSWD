@@ -5,35 +5,35 @@ const friends = [
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     hobby: "Photography",
     quote: "Capture moments, not things.",
-    contact: "alice@example.com"
+    contact: "alice@google.com"
   },
   {
     name: "Brian Smith",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
     hobby: "Cycling",
     quote: "Two wheels move the soul.",
-    contact: "brian.smith@example.com"
+    contact: "brian@google.com"
   },
   {
     name: "Clara White",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     hobby: "Painting",
     quote: "Art is freedom.",
-    contact: "clara.art@example.com"
+    contact: "clara@google.com"
   },
   {
     name: "David Lee",
     image: "https://randomuser.me/api/portraits/men/85.jpg",
     hobby: "Gaming",
     quote: "Level up your life.",
-    contact: "david.gamer@example.com"
+    contact: "david@google.com"
   },
   {
     name: "Emily Rose",
     image: "https://randomuser.me/api/portraits/women/12.jpg",
     hobby: "Reading",
     quote: "Books are portals.",
-    contact: "emily.reads@example.com"
+    contact: "emily@google.com"
   }
 ];
 
